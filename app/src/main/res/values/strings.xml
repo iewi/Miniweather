@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">Miniweather</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="high">high:</string>
+    <string name="low">low:</string>
+    <string name="precip">precip:</string>
+    <string name="clouds">clouds:</string>
+    <string name="wind">wind:</string>
+    <string name="humidity">humidity:</string>
+    <string name="units">metric</string>
+    <string name="ZIP">ZIP:</string>
+    <string name="refresh">refresh</string>
+    <string name="one_day">1-day</string>
+    <string name="seven_day">6-day</string>
+
+    <string name="no_network">Check your network connection\n%1$s</string>
+    <string name="ok">OK</string>
+
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+
+    <string name="imperial_temp">F</string>
+    <string name="metric_temp">C</string>
+    <string name="imperial_speed">KN</string>
+    <string name="metric_speed">M/S</string>
+
+    <string name="north">N</string>
+    <string name="south">S</string>
+    <string name="east">E</string>
+    <string name="west">W</string>
+    <string name="northeast">NE</string>
+    <string name="northwest">NW</string>
+    <string name="southeast">SE</string>
+    <string name="southwest">SW</string>
+
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+
+    <string name="current_temperature">%1$d%2$s</string>
+    <string name="current_high">%1$d%2$s</string>
+    <string name="current_low">%1$d%2$s</string>
+    <string name="current_precip">%1$d%2$s</string>
+    <string name="current_clouds">%1$s</string>
+    <string name="current_wind">%1$d%2$s %3$s</string>
+    <string name="current_humidity">%1$d%2$s</string>
+
+    <string name="first_hi">%1$d%2$s</string>
+    <string name="second_hi">%1$d%2$s</string>
+    <string name="third_hi">%1$d%2$s</string>
+    <string name="fourth_hi">%1$d%2$s</string>
+    <string name="fifth_hi">%1$d%2$s</string>
+    <string name="sixth_hi">%1$d%2$s</string>
+    <string name="seventh_hi">%1$d%2$s</string>
+
+    <string name="first_lo">%1$d%2$s</string>
+    <string name="second_lo">%1$d%2$s</string>
+    <string name="third_lo">%1$d%2$s</string>
+    <string name="fourth_lo">%1$d%2$s</string>
+    <string name="fifth_lo">%1$d%2$s</string>
+    <string name="sixth_lo">%1$d%2$s</string>
+    <string name="seventh_lo">%1$d%2$s</string>
+
+    <string name="first_precip">%1$d%2$s</string>
+    <string name="second_precip">%1$d%2$s</string>
+    <string name="third_precip">%1$d%2$s</string>
+    <string name="fourth_precip">%1$d%2$s</string>
+    <string name="fifth_precip">%1$d%2$s</string>
+    <string name="sixth_precip">%1$d%2$s</string>
+    <string name="seventh_precip">%1$d%2$s</string>
+
+    <string name="first_day">%1$s %2$d/%3$d</string>
+    <string name="second_day">%1$s %2$d/%3$d</string>
+    <string name="third_day">%1$s %2$d/%3$d</string>
+    <string name="fourth_day">%1$s %2$d/%3$d</string>
+    <string name="fifth_day">%1$s %2$d/%3$d</string>
+    <string name="sixth_day">%1$s %2$d/%3$d</string>
+    <string name="seventh_day">%2$d/%3$d %1$s</string>
+
+    <string-array name="highs">
+        <item>@string/first_hi</item>
+        <item>@string/second_hi</item>
+        <item>@string/third_hi</item>
+        <item>@string/fourth_hi</item>
+        <item>@string/fifth_hi</item>
+        <item>@string/sixth_hi</item>
+        <item>@string/seventh_hi</item>
+    </string-array>
+
+    <string-array name="lows">
+        <item>@string/first_lo</item>
+        <item>@string/second_lo</item>
+        <item>@string/third_lo</item>
+        <item>@string/fourth_lo</item>
+        <item>@string/fifth_lo</item>
+        <item>@string/sixth_lo</item>
+        <item>@string/seventh_lo</item>
+    </string-array>
+
+    <string-array name="precips">
+        <item>@string/first_precip</item>
+        <item>@string/second_precip</item>
+        <item>@string/third_precip</item>
+        <item>@string/fourth_precip</item>
+        <item>@string/fifth_precip</item>
+        <item>@string/sixth_precip</item>
+        <item>@string/seventh_precip</item>
+    </string-array>
+
+    <string-array name="days">
+        <item>@string/first_day</item>
+        <item>@string/second_day</item>
+        <item>@string/third_day</item>
+        <item>@string/fourth_day</item>
+        <item>@string/fifth_day</item>
+        <item>@string/sixth_day</item>
+        <item>@string/seventh_day</item>
+    </string-array>
+</resources>

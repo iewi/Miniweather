@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentBottom="false"
+        android:layout_above="@+id/metric"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/today"
+                    android:id="@+id/firstday"
+                    android:textSize="36sp"
+                    android:layout_span="6" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/high"
+                    android:id="@+id/highLbFirst"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/first_hi"
+                    android:id="@+id/highFirst"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/low"
+                    android:id="@+id/lowLbFirst"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/first_lo"
+                    android:id="@+id/lowFirst"
+                    android:textSize="24sp"
+                    android:textIsSelectable="false" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/precip"
+                    android:id="@+id/precipLbFirst"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/first_precip"
+                    android:id="@+id/precipFirst"
+                    android:textSize="24sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/tomorrow"
+                    android:id="@+id/secondday"
+                    android:textSize="36sp"
+                    android:layout_span="6" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/high"
+                    android:id="@+id/highLbSec"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/highSecond"
+                    android:textSize="24sp"
+                    android:text="@string/second_hi" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/low"
+                    android:id="@+id/lowLbSec"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/second_lo"
+                    android:id="@+id/lowSecond"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/precipLbSec"
+                    android:textSize="25sp"
+                    android:text="@string/precip" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/second_precip"
+                    android:id="@+id/precipSecond"
+                    android:textSize="24sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="2/21"
+                    android:id="@+id/thirdday"
+                    android:textSize="36sp"
+                    android:layout_span="6" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/high"
+                    android:id="@+id/highLbThd"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/third_hi"
+                    android:id="@+id/highThird"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/low"
+                    android:id="@+id/lowLbThd"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/third_lo"
+                    android:id="@+id/lowThird"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/precipLbThd"
+                    android:textSize="25sp"
+                    android:text="@string/precip" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/third_precip"
+                    android:id="@+id/precipThird"
+                    android:textSize="24sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="2/22"
+                    android:id="@+id/fourthday"
+                    android:textSize="36sp"
+                    android:layout_span="6" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/high"
+                    android:id="@+id/highLbFth"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/fourth_hi"
+                    android:id="@+id/highFourth"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/low"
+                    android:id="@+id/lowLbFth"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/fourth_lo"
+                    android:id="@+id/lowFourth"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/precipLbFth"
+                    android:textSize="25sp"
+                    android:text="@string/precip" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/fourth_precip"
+                    android:id="@+id/precipFourth"
+                    android:textSize="24sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="2/23"
+                    android:id="@+id/fifthday"
+                    android:textSize="36sp"
+                    android:layout_span="6" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/high"
+                    android:id="@+id/highLbFfth"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/fifth_hi"
+                    android:id="@+id/highFifth"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/low"
+                    android:id="@+id/lowLbFfth"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/fifth_lo"
+                    android:id="@+id/lowFifth"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/precipLbFfth"
+                    android:textSize="25sp"
+                    android:text="@string/precip" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/fifth_precip"
+                    android:id="@+id/precipFifth"
+                    android:textSize="24sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="2/24"
+                    android:id="@+id/sixthday"
+                    android:textSize="36sp"
+                    android:layout_span="6" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/high"
+                    android:id="@+id/highLbSxth"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/sixth_hi"
+                    android:id="@+id/highSixth"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/low"
+                    android:id="@+id/lowLbSxth"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/sixth_lo"
+                    android:id="@+id/lowSixth"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/precipLbSxth"
+                    android:textSize="25sp"
+                    android:text="@string/precip" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/sixth_precip"
+                    android:id="@+id/precipSixth"
+                    android:textSize="24sp" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="2/25"
+                    android:id="@+id/seventhday"
+                    android:textSize="36sp"
+                    android:layout_span="6" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/high"
+                    android:id="@+id/highLbSvth"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/seventh_hi"
+                    android:id="@+id/highSeventh"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/low"
+                    android:id="@+id/lowLbSvth"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/seventh_lo"
+                    android:id="@+id/lowSeventh"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/precipLbSvth"
+                    android:textSize="25sp"
+                    android:text="@string/precip" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/seventh_precip"
+                    android:id="@+id/precipSeventh"
+                    android:textSize="24sp" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/ZIP"
+        android:id="@+id/zipLb"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="24sp" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/zipEdit"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/zipLb"
+        android:layout_toEndOf="@+id/zipLb"
+        android:textSize="24sp" />
+
+    <Switch
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="@string/units"
+        android:id="@+id/metric"
+        android:layout_above="@+id/zipLb"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false"
+        android:clickable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/one_day"
+        android:id="@+id/main"
+        android:layout_above="@+id/refresh"
+        android:layout_toRightOf="@+id/zipEdit"
+        android:layout_toEndOf="@+id/zipEdit"
+        android:clickable="true"
+        android:onClick="oneDay" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/refresh"
+        android:id="@+id/refresh"
+        android:layout_toRightOf="@+id/zipEdit"
+        android:layout_toEndOf="@+id/zipEdit"
+        android:layout_alignParentEnd="false"
+        android:layout_alignBottom="@+id/zipLb"
+        android:onClick="refresh"
+        android:clickable="true" />
+
+</RelativeLayout>
